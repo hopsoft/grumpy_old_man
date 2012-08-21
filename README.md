@@ -80,4 +80,3 @@ You might not agree, but I'm sticking with my old fashioned assert.
 
 **Now get off my lawn!**
 
-<a href="https://github.com/hopsoft/grumpy_old_man"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 9999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
