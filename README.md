@@ -2,6 +2,8 @@
 
 GrumpyOldMan is an RSpec shim that provides old school assert methods.
 
+![Grumpy Old Man GEM](http://hopsoft.github.com/grumpy_old_man/images/clint-eastwood.jpg)
+
 It adds the following methods to RSpec without compromising any of RSpecs awesomeness.
 
 * `assert`
