@@ -46,9 +46,15 @@ Asserts allow me to write code that more closely resembles the app logic itself.
 
 ## Usage
 
+```bash
+gem install grumpy_old_man
+```
+
 Simply include GrumpyOldMan in your spec/test like so.
 
 ```ruby
+require 'grumpy_old_man'
+
 describe Thing
   include GrumpyOldMan
 
