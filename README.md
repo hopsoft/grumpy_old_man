@@ -4,7 +4,9 @@
 
 ![GrumpyOldMan GEM](http://hopsoft.github.com/grumpy_old_man/images/clint-eastwood.jpg)
 
-It adds the following methods to RSpec without compromising any of RSpecs awesomeness.
+<br /><br />
+
+GrumpyOldMan adds the following methods to RSpec without compromising any of RSpecs awesomeness.
 
 * `assert`
 * `assert_equal`
