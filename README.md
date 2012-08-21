@@ -4,9 +4,9 @@ GrumpyOldMan is an RSpec shim that provides old school assert methods.
 
 It adds the following methods to RSpec without compromising any of RSpecs awesomeness.
 
-* assert
-* assert_equal
-* assert_raise
+* `assert`
+* `assert_equal`
+* `assert_raise`
 
 Yes you really can have your cake and eat it too!
 
@@ -15,11 +15,9 @@ Yes you really can have your cake and eat it too!
 I love several things about RSpec.
 
 * Its beautiful output from the test runner
-* Its declarative approach to writing tests
+* Its declarative approach to writing tests... well at the the outer wrapper e.g. `describe Thing it 'should do stuff'`
 
-  * Well at the the outer wrapper e.g. `describe Thing it 'should do stuff'`
-
-But... I lament the fact that the rest of RSpec is an over engineered solution to a simple problem.
+I lament the fact that the rest of RSpec is an over engineered solution to a simple problem.
 `assert true`
 
 ---
