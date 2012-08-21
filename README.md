@@ -4,7 +4,8 @@
 
 ![GrumpyOldMan GEM](http://hopsoft.github.com/grumpy_old_man/images/clint-eastwood.jpg)
 
-<br /><br />
+<br />
+<br />
 
 GrumpyOldMan adds the following methods to RSpec without compromising any of RSpecs awesomeness.
 

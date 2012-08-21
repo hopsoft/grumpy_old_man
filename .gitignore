@@ -1,2 +1,5 @@
 *.gem
 *.rvmrc
+_site
+_layouts
+images
