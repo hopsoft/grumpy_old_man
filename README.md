@@ -1,11 +1,10 @@
 # Grumpy Old Man
 
-## Adding old school asserts to RSpec.
+## Adding old school asserts to RSpec
 
 ![GrumpyOldMan GEM](http://hopsoft.github.com/grumpy_old_man/images/clint-eastwood.jpg)
 
-<br />
-<br />
+#### Do you feel lucky? ... punk.
 
 GrumpyOldMan adds the following methods to RSpec without compromising any of RSpecs awesomeness.
 
@@ -22,7 +21,7 @@ I love several things about RSpec.
 * Its beautiful output from the test runner
 * Its declarative approach to writing tests... well at least the outer wrapper e.g. `describe Thing; it 'should do stuff'`
 
-Unfortunately a large chunk of RSpec is over engineered and adds complexity to a relatively simple problem:
+Unfortunately parts of RSpec are over engineered and add unwanted complexity to a relatively simple problem:
 `assert true`
 
 ---
