@@ -22,7 +22,7 @@ I love several things about RSpec.
 * Its beautiful output from the test runner
 * Its declarative approach to writing tests... well at least the outer wrapper e.g. `describe Thing; it 'should do stuff'`
 
-I lament the fact that the rest of RSpec is an over engineered solution to a simple problem:
+Unfortunately a large chunk of RSpec is over engineered and adds complexity to a relatively simple problem:
 `assert true`
 
 ---
