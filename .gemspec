@@ -2,7 +2,7 @@ require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name = 'grumpy_old_man'
-  spec.version = '0.1.2'
+  spec.version = '0.1.3'
   spec.license = 'MIT'
   spec.homepage = 'http://hopsoft.github.com/grumpy_old_man/'
   spec.summary = 'Asserts for RSpec'

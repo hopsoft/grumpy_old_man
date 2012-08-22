@@ -9,7 +9,7 @@ describe RSpec do
   end
 
   it "should support assert_equal with GrumpyOldMan" do
-    assert_equal true, self.respond_to?(:assert)
+    assert_equal self.respond_to?(:assert), true
   end
 
   it "should support assert_raise with GrumpyOldMan" do

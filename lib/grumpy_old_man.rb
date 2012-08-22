@@ -21,10 +21,10 @@ module GrumpyOldMan
   # A basic assert helper that tests for Object equality.
   # Tests for object equivalence rather than object identity since this is sufficient for most tests.
   #
-  # @param [Objecct] obj The Object to compare.
-  # @param [Objecct] expected The expected value.
-  def assert_equal(obj, expected)
-    obj.should == expected
+  # @param [Object] actual The Object to compare.
+  # @param [Object] expected The expected value.
+  def assert_equal(actual, expected)
+    expected.should == actual
   end
 
   # A basic assert helper that ensures an Error was raised.
