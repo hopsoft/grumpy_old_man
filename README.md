@@ -21,15 +21,16 @@ I love several things about RSpec.
 * Its beautiful output from the test runner
 * Its declarative approach to writing tests... well at least the outer wrapper e.g. `describe Thing; it 'should do stuff'`
 
-Unfortunately parts of RSpec are over engineered and add unwanted complexity to a relatively simple problem:
+Unfortunately parts of RSpec add unwanted complexity to a relatively simple problem:
 `assert true`
 
 ---
 
-My contention is that its better to write tests in the same manner you write the app.
-This approach does away with the context switching between app syntax and a wonky DSL confined to the test suite.
+I contend its better to write tests in the same manner you write the app.
+This reduces cognitive load because it removes the need for context switching between app code
+and wonky DSLs in the test suite.
 
-It also lowers the barrier to entry.
+It also lowers the barrier to entry for new team members unfamiliar with RSpec.
 
 Consider the following example from the RSpec docs.
 
@@ -44,7 +45,8 @@ assert order.total == Money.new(5.55, :USD)
 assert_equal order.total, Money.new(5.55, :USD)
 ```
 
-Asserts allow me to write code that more closely resembles the app logic itself... which feels more natural.
+Asserts allow you to write code that more closely resembles the app logic itself
+which feels more natural.
 
 ## Usage
 
@@ -78,4 +80,6 @@ end
 You might not agree, but I'm sticking with my old fashioned assert.
 
 **Now get off my lawn!**
+
+If you like GrupyOldMan, checkout [MicroTest](http://hopsoft.github.com/micro_test/) and discover just how serene testing can be.
 
