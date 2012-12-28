@@ -81,5 +81,5 @@ You might not agree, but I'm sticking with my old fashioned assert.
 
 **Now get off my lawn!**
 
-If you like GrupyOldMan, checkout [MicroTest](http://hopsoft.github.com/micro_test/) and discover just how serene testing can be.
+*If you like GrupyOldMan, check out [MicroTest](http://hopsoft.github.com/micro_test/) and discover just how serene testing can be.*
 
