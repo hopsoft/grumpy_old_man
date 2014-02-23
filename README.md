@@ -33,7 +33,7 @@ assert true
 
 ## Simple is better
 
-I content it's better to write tests in the same manner you write your app.
+I contend it's better to write tests in the same manner you write your app.
 Doing so reduces cognitive load by eliminating the context switching
 between app code and wonky DSLs in the test suite.
 
