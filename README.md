@@ -8,10 +8,6 @@ GrumpyOldMan adds the following methods to RSpec without compromising any of RSp
 * `assert_equal`
 * `assert_raise`
 
-Yes you really can have your cake and eat it too!
-
----
-
 I love several things about RSpec.
 
 * Its beautiful output from the test runner
@@ -25,13 +21,11 @@ describe Thing do
 end
 ```
 
-Unfortunately parts of RSpec add unwanted complexity to a relatively simple problem.
+Unfortunately parts of RSpec add unwanted complexity to a relatively simple problem:
 
 ```ruby
 assert true
 ```
-
----
 
 I contend its better to write tests in the same manner you write your app.
 Doing so reduces cognitive load by eliminating the context switching between app code
@@ -74,7 +68,9 @@ describe Thing
   end
 
   it "should be balanced" do
-    assert_equal true, true
+    actual = true
+    expected = true
+    assert_equal actual, expected
   end
 
   it "should be exceptional" do
