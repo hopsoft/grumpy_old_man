@@ -31,11 +31,13 @@ Unfortunately parts of RSpec add unwanted complexity to a relatively simple prob
 assert true
 ```
 
-I contend its better to write tests in the same manner you write your app.
-Doing so reduces cognitive load by eliminating the context switching between app code
-and wonky DSLs in the test suite.
+## Simple is better
 
-It also lowers the barrier to entry for new team members because it simplifies your tests.
+I content it's better to write tests in the same manner you write your app.
+Doing so reduces cognitive load by eliminating the context switching
+between app code and wonky DSLs in the test suite.
+
+It simplifies your tests... and that's a [good thing](http://en.wikipedia.org/wiki/Unix_philosophy#.22Worse_is_better.22).
 
 Consider the following example from the RSpec docs.
 
@@ -78,7 +80,9 @@ describe Thing
   end
 
   it "should be exceptional" do
-    assert_raise(Exception) { raise }
+    assert_raise(Exception) do
+      raise
+    end
   end
 
 end
