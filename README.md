@@ -1,5 +1,9 @@
 # Grumpy Old Man
 
+[![Build Status](https://travis-ci.org/hopsoft/grumpy_old_man.png?branch=master)](https://travis-ci.org/hopsoft/grumpy_old_man)
+[![Dependency Status](https://gemnasium.com/hopsoft/grumpy_old_man.png)](https://gemnasium.com/hopsoft/grumpy_old_man)
+[![Code Climate](https://codeclimate.com/github/hopsoft/grumpy_old_man.png)](https://codeclimate.com/github/hopsoft/grumpy_old_man)
+
 ## Adding old school asserts to RSpec
 
 GrumpyOldMan adds the following methods to RSpec without compromising any of RSpec's awesomeness.
