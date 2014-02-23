@@ -1,9 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-group :test do
-  gem "rspec"
-end
-
-group :development do
-  gem "jekyll"
-end
+# Specify your gem's dependencies in auth_token.gemspec
+gemspec
