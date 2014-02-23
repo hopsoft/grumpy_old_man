@@ -1,3 +1,5 @@
+require "grumpy_old_man/version"
+
 # A mixin for RSpec tests that provides old school assert methods.
 module GrumpyOldMan
 
