@@ -1,8 +1,6 @@
-# Grumpy Old Man
+[![Lines of Code](http://img.shields.io/badge/lines_of_code-76-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 
-[![Build Status](https://travis-ci.org/hopsoft/grumpy_old_man.png?branch=master)](https://travis-ci.org/hopsoft/grumpy_old_man)
-[![Dependency Status](https://gemnasium.com/hopsoft/grumpy_old_man.png)](https://gemnasium.com/hopsoft/grumpy_old_man)
-[![Code Climate](https://codeclimate.com/github/hopsoft/grumpy_old_man.png)](https://codeclimate.com/github/hopsoft/grumpy_old_man)
+# Grumpy Old Man
 
 ## Adding old school asserts to RSpec
 
