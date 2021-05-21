@@ -1,7 +1,8 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'grumpy_old_man/version'
+require "grumpy_old_man/version"
 
 Gem::Specification.new do |gem|
   gem.name = "grumpy_old_man"
@@ -19,6 +20,8 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "rspec"
 
-  gem.add_development_dependency "bundler", "~> 1.5"
+  gem.add_development_dependency "bundler", ">= 2.0"
   gem.add_development_dependency "rake"
+  gem.add_development_dependency "standard"
+  gem.add_development_dependency "magic_frozen_string_literal"
 end

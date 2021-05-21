@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 require "grumpy_old_man/version"
 
 # A mixin for RSpec tests that provides old school assert methods.
 module GrumpyOldMan
-
   # A simple assert for RSpec.
   #
   # @example
@@ -12,7 +13,7 @@ module GrumpyOldMan
   #   assert { true.to_s == "true" }
   #
   # @param [Object] arg An optional arg to assert as equal to true.
-  def assert(arg=nil)
+  def assert(arg = nil)
     if block_given?
       assert_equal(yield, true)
     else
@@ -34,6 +35,4 @@ module GrumpyOldMan
   def assert_raise(ex, &block)
     Proc.new(&block).should raise_error(ex)
   end
-
 end
-
