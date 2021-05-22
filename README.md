@@ -13,12 +13,10 @@ GrumpyOldMan adds the following methods to RSpec without compromising any of RSp
 
 > NOTE: If you're using [rspec-rails](https://github.com/rspec/rspec-rails), these methods are delegated to MiniTest and you don't need GrumpyOldMan.
 
----
-
 Testing libraries exist to help you do the following.
 
 1. Execute some code
-1. Verify that if produced the expected outcome
+1. Verify that it produced the expected outcome
 
 Or more simply...
 
