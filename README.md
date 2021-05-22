@@ -62,9 +62,9 @@ gem install grumpy_old_man
 Simply include GrumpyOldMan in your spec/test like so.
 
 ```ruby
-require 'grumpy_old_man'
+require "grumpy_old_man"
 
-describe Thing
+describe Thing do
   include GrumpyOldMan
 
   it "should feel good" do
@@ -82,7 +82,6 @@ describe Thing
       raise
     end
   end
-
 end
 ```
 
@@ -90,5 +89,5 @@ You might not agree, but I'm sticking with my old fashioned assert.
 
 **Now get off my lawn!**
 
-*If you like GrupyOldMan, check out [MicroTest](http://hopsoft.github.com/micro_test/) and discover just how serene testing can be.*
+*If you like GrupyOldMan, check out [PryTest](https://github.com/hopsoft/pry-test) and discover just how serene testing can be.*
 
