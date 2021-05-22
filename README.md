@@ -72,7 +72,6 @@ end
 ```
 
 You may not agree, but I'm sticking with my old fashioned assert.
-
 **Now get off my lawn!**
 
 *If you like GrupyOldMan, check out [PryTest](https://github.com/hopsoft/pry-test) and discover just how serene testing can be.*
