@@ -13,13 +13,7 @@ GrumpyOldMan adds the following methods to RSpec without compromising any of RSp
 
 > NOTE: If you're using [rspec-rails](https://github.com/rspec/rspec-rails), these methods are delegated to MiniTest and you don't need GrumpyOldMan.
 
-I love a few things about RSpec.
-
-* Its beautiful output from the test runner
-* Its declarative approach to writing tests... well at least the outer wrapper i.e.
-
-But, RSpec also adds a lot of [unnecessary complexity](https://fs.blog/2018/01/complexity-bias/).
-*Looking at you __expectations__ and __matchers__.*
+---
 
 Testing libraries exist to help you do the following.
 
@@ -31,6 +25,9 @@ Or more simply...
 ```ruby
 assert true
 ```
+
+Unfortunately RSpec adds a lot of [unnecessary complexity](https://fs.blog/2018/01/complexity-bias/).
+*Looking at you __expectations__ and __matchers__.*
 
 ## Simplicity FTW
 
