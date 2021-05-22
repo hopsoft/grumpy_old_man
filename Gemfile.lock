@@ -1,18 +1,23 @@
 PATH
   remote: .
   specs:
-    grumpy_old_man (0.1.5)
+    grumpy_old_man (0.1.6)
       rspec
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    coderay (1.1.3)
     diff-lcs (1.4.4)
     magic_frozen_string_literal (1.2.0)
+    method_source (1.0.0)
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     rainbow (3.0.0)
     rake (13.0.3)
     regexp_parser (2.1.1)
@@ -57,6 +62,7 @@ DEPENDENCIES
   bundler (>= 2.0)
   grumpy_old_man!
   magic_frozen_string_literal
+  pry
   rake
   standard
 

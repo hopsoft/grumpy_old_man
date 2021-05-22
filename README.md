@@ -4,38 +4,35 @@
 
 ## Adding old school asserts to RSpec
 
-GrumpyOldMan adds the following methods to RSpec without compromising any of RSpec's awesomeness.
+GrumpyOldMan adds the following methods to RSpec without compromising any of RSpec's other features.
 
 * `assert`
 * `assert_equal`
 * `assert_raise`
+* `refute`
 
-I love several things about RSpec.
+> NOTE: If you're using [rspec-rails](https://github.com/rspec/rspec-rails), these methods are delegated to MiniTest and you don't need GrumpyOldMan.
+
+I love a few things about RSpec.
 
 * Its beautiful output from the test runner
 * Its declarative approach to writing tests... well at least the outer wrapper i.e.
 
-```ruby
-describe Thing do
-  it 'should do stuff' do
-    # ...
-  end
-end
-```
+But, RSpec also adds a lot of [unnecessary complexity](https://fs.blog/2018/01/complexity-bias/).
+*Looking at you __expectations__ and __matchers__.*
 
-Unfortunately parts of RSpec add unwanted complexity to a relatively simple problem:
+Testing libraries exist to help you do the following.
+
+1. Execute some code
+1. Verify that if produced the expected outcome
+
+Or more simply...
 
 ```ruby
 assert true
 ```
 
-## Simple is better
-
-I contend it's better to write tests in the same manner you write your app.
-Doing so reduces cognitive load by eliminating the context switching
-between app code and wonky DSLs in the test suite.
-
-It simplifies your tests... and that's a [good thing](http://en.wikipedia.org/wiki/Unix_philosophy#.22Worse_is_better.22).
+## Simplicity FTW
 
 Consider the following example from the RSpec docs.
 
@@ -46,17 +43,18 @@ expect(order.total).to eq(Money.new(5.55, :USD))
 Rewritten with GrumpyOldMan.
 ```ruby
 assert order.total == Money.new(5.55, :USD)
+
 # or ...
+
 assert_equal order.total, Money.new(5.55, :USD)
 ```
 
-Asserts encourage tests that more closely resemble the app logic itself.
-Making tests look familiar & more natural.
+Simple `asserts` encourage test code that resembles your application logic.
 
 ## Usage
 
 ```bash
-gem install grumpy_old_man
+bundle add grumpy_old_man
 ```
 
 Simply include GrumpyOldMan in your spec/test like so.
@@ -67,27 +65,17 @@ require "grumpy_old_man"
 describe Thing do
   include GrumpyOldMan
 
-  it "should feel good" do
+  it "should be simple" do
     assert true
-  end
-
-  it "should be balanced" do
-    actual = true
-    expected = true
-    assert_equal actual, expected
-  end
-
-  it "should be exceptional" do
-    assert_raise(Exception) do
-      raise
-    end
+    assert_equal true, true
+    assert_raise(Exception) { raise }
+    refute false
   end
 end
 ```
 
-You might not agree, but I'm sticking with my old fashioned assert.
+You may not agree, but I'm sticking with my old fashioned assert.
 
 **Now get off my lawn!**
 
 *If you like GrupyOldMan, check out [PryTest](https://github.com/hopsoft/pry-test) and discover just how serene testing can be.*
-

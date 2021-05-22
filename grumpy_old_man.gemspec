@@ -21,7 +21,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rspec"
 
   gem.add_development_dependency "bundler", ">= 2.0"
+  gem.add_development_dependency "magic_frozen_string_literal"
+  gem.add_development_dependency "pry"
   gem.add_development_dependency "rake"
   gem.add_development_dependency "standard"
-  gem.add_development_dependency "magic_frozen_string_literal"
 end
